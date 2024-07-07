@@ -20,3 +20,8 @@
 .game div:last-child {
   background-color: blue;
 }
+
+.scores {
+  display: flex;
+  gap: 2rem;
+}
