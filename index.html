@@ -8,26 +8,38 @@
   </head>
   <body>
     <main>
-      <p>Welcome!</p>
-      <h1>Rock,Paper,Scissors</h1>
-
-      <div class="scores">
-        <p>
-          computer
-          <span class="comscore">0</span>
-        </p>
-        <p>
-          <span class="humscore">0</span>
-          You
-        </p>
+      <div class="container">
+        <div class="intro">
+          <h1>Rock,Paper,Scissors</h1>
+          <p>
+            Welcome
+            <span class="playerName"></span>
+          </p>
+        </div>
+        <div class="scores">
+          <p>
+            computer
+            <span class="comscore">0</span>
+          </p>
+          <p>
+            <span class="humscore">0</span>
+            You
+          </p>
+        </div>
+        <div class="game">
+          <div id="rock" class="choice rock">
+            <img src="img/rock.webp" alt="" />
+          </div>
+          <div id="rock" class="choice paper">
+            <img src="img/paper.png" alt="" />
+          </div>
+          <div id="rock" class="choice scissors">
+            <img src="img/scissors.webp" alt="" />
+          </div>
+        </div>
+        <p class="win"></p>
+        <p class="stat"></p>
       </div>
-
-      <div class="game">
-        <div class="choice rock">rock</div>
-        <div class="choice paper">paper</div>
-        <div class="choice scissors">scissors</div>
-      </div>
-      <p class="win"></p>
     </main>
   </body>
   <script src="js/main.js"></script>
