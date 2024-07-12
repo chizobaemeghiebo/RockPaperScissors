@@ -7,40 +7,41 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
-      <div class="container">
-        <div class="intro">
-          <h1>Rock,Paper,Scissors</h1>
-          <p>
-            Welcome
-            <span class="playerName"></span>
-          </p>
-        </div>
-        <div class="scores">
-          <p>
-            computer
-            <span class="comscore">0</span>
-          </p>
-          <p>
-            <span class="humscore">0</span>
-            You
-          </p>
-        </div>
-        <div class="game">
-          <div id="rock" class="choice rock">
-            <img src="img/rock.webp" alt="" />
-          </div>
-          <div id="rock" class="choice paper">
-            <img src="img/paper.png" alt="" />
-          </div>
-          <div id="rock" class="choice scissors">
-            <img src="img/scissors.webp" alt="" />
-          </div>
-        </div>
-        <p class="win"></p>
-        <p class="stat"></p>
+    <div class="container">
+      <div class="intro">
+        <h1>Rock,Paper,Scissors</h1>
+        <p>
+          Welcome
+          <span class="playerName"></span>
+        </p>
+        <p>You have got 5 tries to be crowned the Rock,paper,Scissors champion. Do you dare to compete?</p>
       </div>
-    </main>
+      <div class="scores">
+        <p>
+          Score: computer
+          <span class="comscore">0</span>
+        </p>
+        <p>
+          <span class="humscore">0</span>
+          You
+        </p>
+      </div>
+      <div class="game">
+        <div id="rock" class="choice rock">
+          <img src="img/rock.webp" alt="" />
+        </div>
+        <div id="rock" class="choice paper">
+          <img src="img/paper.png" alt="" />
+        </div>
+        <div id="rock" class="choice scissors">
+          <img src="img/scissors.webp" alt="" />
+        </div>
+      </div>
+      <div class="stats">
+        <p class="stat"></p>
+        <p class="win"></p>
+      </div>
+    </div>
   </body>
   <script src="js/main.js"></script>
 </html>
