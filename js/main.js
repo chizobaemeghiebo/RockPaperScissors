@@ -35,6 +35,11 @@ choice.forEach((ch) => {
     playerChoice = ch.id
     let computer = getComputerChoice()
 
+    // show stats
+    let stat = document.querySelector('.stat')
+    stat.innerHTML = `${player}: ${playerChoice} <br> Computer: ${computer}`
+    console.log(ch)
+
     if (playerChoice === computer) {
       win.innerHTML = `It's a tie!!!!!!!!!!!!!!!`
     } else if (playerChoice == 'rock' && computer == 'scissors') {
@@ -54,10 +59,6 @@ choice.forEach((ch) => {
       comscore.innerHTML = Number(computerScore)
       win.innerHTML = 'Computer wins'
     }
-
-    // show stats
-    let stat = document.querySelector('.stat')
-    stat.innerHTML = `${player}: ${playerChoice} <br> Computer: ${computer}`
 
     // game over logic
     let rand = Math.floor(Math.random() * 5)
